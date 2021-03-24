@@ -1,5 +1,13 @@
-### Hi there 👋
+## Oi, sou Moacir David :smiley:
 
+!["Tecnologia ❤️"](https://cdn.vivotech.com.br/vivo-tech/wp-content/uploads/2019/01/10185353/cidade-da-internet-em-Wifi-Ralph.gif)
+
+* 📚 Atualmente estou cursando **Análise e Desenvolvimento de Sistemas** no **IFPB - Campus Cajazeiras**;
+* 💻 **Linguagem mais usada:** JavaScript ❤️;
+* 📌 **Áreas de interesse:** Desenvolvimento web e jogos 🎮;
+------------------------------------------------------------
+📖 "Porque dele, e por ele, e para ele são todas as coisas; glória, pois, a ele eternamente. Amém!"
+**Romanos 11:36** - Jesus ❤️
 <!--
 **moacirdavidag/moacirdavidag** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
