@@ -1,15 +1,26 @@
 let menu_btn = document.getElementById("menu_btn");
 let navbar = document.querySelector("header nav");
-let ul_li = document.getElementsByClassName("list");
+let ul_li = [];
+let list_link = document.querySelectorAll("header nav ul li");
 let count = 0;
+let fecharIcone = document.querySelector("#fecharIcone");
+for(const link of list_link) {
+    ul_li.push(link);
+}
+
 
 menu_btn.addEventListener("click", () => {
-    if(count == 0) {
-        navbar.classList.add("navbar_responsive");
-        ul_li.classList.add("list_responsive");
-        count++;
-    } else {
-        navbar.classList.remove("navbar_responsive");
-        count = 0;
+    
+    navbar.classList.add("navbar_responsive");
+    for(const li of ul_li) {
+        li.style.display = "block";
+    }
+    
+});
+
+fecharIcone.addEventListener("click", () => {
+    navbar.classList.remove("navbar_responsive");
+    for(const li of ul_li) {
+        li.style.display = "none";
     }
 });
