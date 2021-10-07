@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root {
+    --dark-blue: #182a2c;
+    --medium-blue: #2c596d;
+    --cian-blue: #003b51;
+    --light-blue: #4b8084;
+    --light-color: #afcac3;
+    --text-gray: #696969;
+}
+
+a, a:visited {
+    color: var(--medium-blue);
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    color: var(--text-gray, #000);
+}
+
+.container {
+    width: 100vw;
+}
+
+.main_bg {
+    width: 100%;
+    height: 450px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    background: url("/images/background_main.png") no-repeat;
+    background-size: cover;
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a {
+    color: var(--light-color);
+}
+
+header a:visited {
+    color: var(--light-color);
+}
+
+#logo {
+    margin-left: 20px;
+    width: 50px;
+    font-weight: 1000;
+    font-size: 25px;
+}
+
+#logo a {
+    color: var(--light-color);
+}
+
+#logo a:hover {
+    color: var(--medium-blue);
+}
+
+#menu_btn {
+    font-size: 25px;
+    margin-right: 25px;
+    color: var(--light-color);
+    cursor: pointer;
+    display: none;
+}
+
+#menu_btn:hover {
+    color: var(--medium-blue);
+}
+
+header nav {
+    margin-right: 50px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+header nav i {
+    margin-right: 5px;
+    color: var(--light-blue);
+}
+
+
+header nav li {
+    margin-left: 40px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: var(--light-color);
+}
+
+header nav li:hover {
+    padding: 20px;
+    background: var(--light-color);
+    color: var(--dark-blue);
+    transition: padding 0.1s ease-in-out;
+}
+
+header nav li a:hover {
+    color: var(--dark-blue);
+}
+
+#home_info {
+    width: 100vw;
+    display: flex;
+    align-items: flex-start;
+    justify-content: right;
+    color: #f8f8ff;
+}
+
+#home_info div {
+    margin: 80px 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+#home_photo {
+    max-width: 200px;
+    max-height: 200px;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(105, 105, 105, 0.2);
+}
+
+#home_photo:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s ease-in-out;
+}
+
+.circle_image {
+    border-radius: 50%;
+}
+
+#personal_info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+#personal_info .box_info {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 25px;
+    font-size: 1.3em;
+}
+
+#personal_info .box_info i {
+    font-size: 2em;
+    margin-bottom: 5px;
+}
+
+.row {
+    width: 0.1em;
+    background-color: var(--text-gray);
+}
+
+.content {
+    width: 100vw;
+    background-color: #f8f8ff;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.content p {
+    margin-bottom: 20px;
+}
+
+.content ul li {
+    margin-left: 5px;
+    display: inline;
+    font-size: 1.2em;
+}
+
+footer {
+    width: 100%;
+    background-color: #363636;
+    color: #f8f8ff;
+    text-align: center;
+    padding: 20px;
+    height: auto;
+}
+
+.navbar_responsive {
+    display: block;
+    position: absolute;
+    top: 0;
+    background: #ffffff;
+    width: 100vw;
+    height: 400px;
+}
+
+.list_responsive {
+    display: block;
+}
+
+@media screen and (max-width: 720px) {
+    body {
+        font-size: 0.9em;
+    }
+    .main_bg {
+        height: 350px;
+    }
+    #home_photo {
+        max-width: 150px;
+        height: 150px;
+    }
+    header nav {
+        display: none;
+    }
+    .row {
+        width: 50%;
+        height: 0.1em;
+    }
+    #menu_btn {
+        display: block;
+        margin-right: 30px;
+    }
+    #home_info div {
+        margin: 50px 40px;
+    }
+    #personal_info {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .content ul li { 
+        display: block;
+    }
+}
+
+
+
+@media screen and (max-width: 500px) {
+    .main_bg {
+        height: 300px;
+    }
+    #home_info h1 {
+        font-size: 1.1em;
+    }
+    #home_photo {
+        max-width: 100px;
+        height: 100px;
+    }
+}
